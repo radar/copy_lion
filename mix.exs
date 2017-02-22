@@ -14,7 +14,7 @@ defmodule CopyLion.Mixfile do
   #
   # Type "mix help compile.app" for more information
   def application do
-    [applications: [:logger, :poolboy],
+    [applications: [:logger, :mongodb, :poolboy, :sasl],
      mod: {CopyLion, []}]
   end
 
@@ -29,7 +29,7 @@ defmodule CopyLion.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [
-      {:mongodb, "~> 0.1.1"},
+      {:mongodb, "~> 0.2.0"},
       {:poolboy, "~> 1.5"}
     ]
   end

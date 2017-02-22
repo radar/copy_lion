@@ -13,6 +13,6 @@ defmodule CopyLion.EventImporter do
   end
 
   def import do
-    Mongo.find(MongoPool, "response_events", %{"$where" => "sleep(5000)"}) |> Enum.to_list
+    Mongo.find(:mongo, "response_events", %{"$where" => "sleep(5000)"}, pool: DBConnection.Poolboy) |> Enum.to_list
   end
 end

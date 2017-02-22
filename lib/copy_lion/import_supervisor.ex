@@ -5,7 +5,6 @@ defmodule CopyLion.ImportSupervisor do
   use Supervisor
 
   def start_link do
-    MongoPool.start_link(database: "murmur_development")
     {:ok, pid} = Supervisor.start_link(__MODULE__, [], name: CopyLion.ImportSupervisor)
     # # TEMPORARY! Used to figure out why CopyLion.ImportSupervisor is crashing
     # # Starts the dbg tracer

@@ -8,7 +8,8 @@ defmodule CopyLion do
 
     # Define workers and child supervisors to be supervised
     children = [
-      supervisor(CopyLion.ImportSupervisor, [])
+      supervisor(CopyLion.ImportSupervisor, []),
+      worker(Mongo, [[name: :mongo, database: "murmur_development", pool: DBConnection.Poolboy]])
     ]
 
     # See http://elixir-lang.org/docs/stable/elixir/Supervisor.html
