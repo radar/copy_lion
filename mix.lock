@@ -1,0 +1,3 @@
+%{"connection": {:hex, :connection, "1.0.4", "a1cae72211f0eef17705aaededacac3eb30e6625b04a6117c1b2db6ace7d5976", [:mix], []},
+  "mongodb": {:hex, :mongodb, "0.1.1", "8737d8f57466b4171f8216f76aa1ab3855d55220b19a1a248fedc96c9f50c274", [:mix], [{:connection, "~> 1.0", [hex: :connection, optional: false]}, {:poolboy, "~> 1.5", [hex: :poolboy, optional: true]}]},
+  "poolboy": {:hex, :poolboy, "1.5.1", "6b46163901cfd0a1b43d692657ed9d7e599853b3b21b95ae5ae0a777cf9b6ca8", [:rebar], []}}
