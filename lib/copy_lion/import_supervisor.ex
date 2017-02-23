@@ -26,7 +26,34 @@ defmodule CopyLion.ImportSupervisor do
   defp child_options do
     [
       [
-        name: CopyLion.SurveyImporter,
+        name: CopyLion.Survey1Importer,
+      ],
+      [
+        name: CopyLion.Survey2Importer,
+      ],
+      [
+        name: CopyLion.Survey3Importer,
+      ],
+      [
+        name: CopyLion.Survey4Importer,
+      ],
+      [
+        name: CopyLion.Survey5Importer,
+      ],
+      [
+        name: CopyLion.Survey6Importer,
+      ],
+      [
+        name: CopyLion.Survey7Importer,
+      ],
+      [
+        name: CopyLion.Survey8Importer,
+      ],
+      [
+        name: CopyLion.Survey9Importer,
+      ],
+      [
+        name: CopyLion.Survey10Importer,
       ],
     ]
   end
